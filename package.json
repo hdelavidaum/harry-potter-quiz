@@ -1,6 +1,7 @@
 {
-  "name": "with-typescript-styled-components",
-  "version": "1.0.0",
+  "name": "harry-potter-quiz-imersao-alura",
+  "author": "Henrique Delavi Daum",
+  "version": "0.0.1",
   "scripts": {
     "dev": "next",
     "build": "next build",
