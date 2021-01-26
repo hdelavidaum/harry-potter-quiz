@@ -45,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
 
 const theme = db.theme;
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: any) {
   return (
     <>
       <ThemeProvider theme={theme}>
