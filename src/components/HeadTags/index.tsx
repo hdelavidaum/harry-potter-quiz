@@ -22,6 +22,9 @@ const HeadTags = () => {
             <meta property="twitter:title" content="HP Quiz|Imersão Alura|React+Next.js" />
             <meta property="twitter:description" content="Developed by Henrique Delavi Daum at 'Imersão Alura React+NextJS'" />
             <meta property="twitter:image" content="https://raw.githubusercontent.com/hdelavidaum/harry-potter-quiz/main/assets/harry-potter-bg.jpg" />
+
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
         </Head>
     )
 }

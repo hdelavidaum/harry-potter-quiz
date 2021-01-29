@@ -49,7 +49,7 @@ const theme = db.theme;
 export default function App({ Component, pageProps }: any) {
   return (
     <>
-      < HeadTags />
+      <HeadTags/>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />
