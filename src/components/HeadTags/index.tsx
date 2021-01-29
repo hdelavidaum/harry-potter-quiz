@@ -8,6 +8,7 @@ const HeadTags = () => {
             <title>HP Quiz - Imersão Alura - React + Next.js</title>
             <meta name="title" content="HP Quiz - Imersão Alura - React + Next.js" />
             <meta name="description" content="Quiz of Harry Potter's World developed by Henrique Delavi Daum at 'Imersão Alura React + NextJS' and deployed with Vercel" />
+            <link rel="shortcut icon" href="https://www.alura.com.br/assets/img/home/homeNova/ilustra-alura-escafandro.1602103866.svg" />
 
             {/* Open Graph / Facebook */}
             <meta property="og:type" content="website" />

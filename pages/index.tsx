@@ -1,10 +1,13 @@
 import styled from 'styled-components'
+
 import db from '../db.json';
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GithubCorner'
+import { Widget, 
+  QuizLogo,
+  QuizBackground,
+  Footer,
+  GithubCorner,
+  NameForm
+} from '../src/components'
 
 // const Title = styled.h1`
 //   color: red;
@@ -46,6 +49,7 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content theme={db.theme}>
             <p>{db.description}</p>
+            <NameForm />
           </Widget.Content>
         </Widget>
 
@@ -58,7 +62,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/hdelavidaum" />
+      <GithubCorner projectUrl="https://github.com/hdelavidaum" />
     </QuizBackground>
   );
 }

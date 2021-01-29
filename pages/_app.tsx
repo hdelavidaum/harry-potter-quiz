@@ -1,6 +1,7 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import db from '../db.json';
+import db from '../db.json'
 import HeadTags from '../src/components/HeadTags'
+import { AppProvider } from '../src/context'
 
 interface Idb {
     theme:{
@@ -50,10 +51,12 @@ export default function App({ Component, pageProps }: any) {
   return (
     <>
       <HeadTags/>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <AppProvider>
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </AppProvider>
     </>
   )
 }

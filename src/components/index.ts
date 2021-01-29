@@ -1,0 +1,7 @@
+export {default as Footer} from './Footer'
+export {default as NameForm} from './Forms/NameForm'
+export {default as GithubCorner} from './GithubCorner'
+export {default as HeadTags} from './HeadTags'
+export {default as QuizBackground} from './QuizBackground'
+export {default as QuizLogo} from './QuizLogo'
+export {default as Widget} from './Widget'
