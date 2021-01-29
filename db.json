@@ -38,7 +38,8 @@
       "wrong": "#FF5722",
       "success": "#4CAF50",
       "darkBlue": "#2a2e39",
-      "darkRed":"#821414", 
+      "darkRed":"#B51414",
+      "darkerRed" : "#661414",
       "dargKray": "#626262", 
       "yellow": "#f2c66f",
       "caramel": "#bd8d4c"

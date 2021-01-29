@@ -14,6 +14,7 @@ interface Idb {
               success?: string,
               darkBlue?: string,
               darkRed?: string, 
+              darkerRed?: string, 
               dargKray?: string ,
               yellow?: string,
               caramel?: string

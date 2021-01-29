@@ -9,6 +9,11 @@ const QuizBackground = styled.div<{ backgroundImage?: string }>`
   background-image: url(${({ backgroundImage }: any) => backgroundImage});
   background-color: ${({ theme }: any) => theme.colors.mainBg};
   flex: 1;
+
+  display: flex;
+  flex-flow: column nowrap;
+  place-content: center;
+  justify-content: space-around;
   
   @media screen and (max-width: 500px) {
     background-image: none;

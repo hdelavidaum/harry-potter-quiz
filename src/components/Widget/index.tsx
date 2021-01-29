@@ -1,5 +1,4 @@
-import styled, { StyledComponentBase } from 'styled-components'
-
+import styled, { StyledComponentBase } from 'styled-components';
 
 interface IWidget extends StyledComponentBase<any, {}> {
   Content?: any;
@@ -10,12 +9,13 @@ interface IWidget extends StyledComponentBase<any, {}> {
 const Widget: IWidget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 1px solid ${({ theme }) => theme.colors.primary};
+  border: 1px solid ${({ theme }) => theme.colors.caramel};
   background-color: ${({ theme }) => {
-    return theme.colors.mainBg;
+    return theme.colors.darkRed;
   }};
-  border-radius: 4px;
+  border-radius: 6px;
   overflow: hidden;
+  opacity: .85;
   h1, h2, h3 {
     font-size: 16px;
     font-weight: 700;
@@ -34,7 +34,7 @@ Widget.Header = styled.header`
   justify-content: flex-start;
   align-items: center;
   padding: 18px 32px;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.darkerRed};
   
   * {
     margin: 0;

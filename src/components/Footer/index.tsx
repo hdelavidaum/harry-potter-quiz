@@ -3,6 +3,7 @@ import styled from 'styled-components'
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`
   background-color: #00000070;
+  margin-top: 24px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -10,6 +11,9 @@ const FooterWrapper = styled.footer`
   img {
     width: 58px;
     margin-right: 23px;
+  }
+  p {
+    font-weight: 300;
   }
   a {
     color: white;
@@ -33,12 +37,9 @@ export default function Footer(props: any) {
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
       </a>
       <p>
-        Orgulhosamente criado durante
-        {' '}
-        a
-        {' '}
+        Proudly created at{' '}
         <a href="https://www.alura.com.br/">
-          <span>Imersão React da Alura</span>
+          <span style={{fontStyle: 'italic'}}lang="pt-BR">Imersão React da Alura</span>
         </a>
       </p>
     </FooterWrapper>
