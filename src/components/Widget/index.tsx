@@ -7,15 +7,16 @@ interface IWidget extends StyledComponentBase<any, {}> {
 
 
 const Widget: IWidget = styled.div`
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   border: 1px solid ${({ theme }) => theme.colors.caramel};
   background-color: ${({ theme }) => {
     return theme.colors.darkRed;
   }};
   border-radius: 6px;
   overflow: hidden;
-  opacity: .85;
+  opacity: .9;
+
   h1, h2, h3 {
     font-size: 16px;
     font-weight: 700;
@@ -43,6 +44,7 @@ Widget.Header = styled.header`
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
+
   & > *:first-child {
     margin-top: 0;
   }

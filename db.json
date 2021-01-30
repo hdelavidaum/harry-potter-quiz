@@ -42,7 +42,8 @@
       "darkerRed" : "#661414",
       "dargKray": "#626262", 
       "yellow": "#f2c66f",
-      "caramel": "#bd8d4c"
+      "caramel": "#bd8d4c",
+      "darkCaramel": "#BD762B"
     },
     "borderRadius": "4px"
   }

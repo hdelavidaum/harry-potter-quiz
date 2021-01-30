@@ -34,10 +34,10 @@ export const QuizContainer = styled.div`
   padding-top: 45px;
   margin: auto 17%;
 
-  display: flex;
+  /* display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  place-content: center center;
+  place-content: center center; */
 
   @media screen and (max-width: 500px) {
     margin: auto;

@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 // import { useState } from 'react'
 import { useAppContext } from '../../../context'
+import { Input, Button } from './styles'
 
 
 const NameForm = () => {
@@ -15,8 +16,10 @@ const NameForm = () => {
   
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Insert your name" onChange={(e) => {setPlayerName(e.target.value); console.log(router)}} />
-      <input type="submit" value={`Hey ${playerName}, send it!`} disabled={playerName.length === 0} />
+      <Input type="text" placeholder="Insert your name here:" onChange={(e) => {setPlayerName(e.target.value); console.log(router)}} />
+      <Button type="submit" disabled={playerName.length === 0} >
+        {`Start quiz!`}
+      </Button>
     </form>
   )
 }      
