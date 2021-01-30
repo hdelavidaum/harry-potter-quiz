@@ -1,7 +1,7 @@
 {
   "bg": "https://raw.githubusercontent.com/hdelavidaum/harry-potter-quiz/main/assets/harry-potter-bg.jpg",
   "title": "Harry Potter Quiz",
-  "description": "Let's test your knowledge of Harry Potter's magic world - created at 'Imersão Alura'.",
+  "description": "Let's test your knowledge of Harry Potter's magic world.",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
