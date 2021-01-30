@@ -7,7 +7,6 @@ const NameForm = () => {
   const router = useRouter()
   const {playerName, setPlayerName}: any = useAppContext()
   
-  
   const handleSubmit = (e: React.SyntheticEvent) =>{
     e.preventDefault();
     
