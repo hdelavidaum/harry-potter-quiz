@@ -27,7 +27,7 @@ export const Button = styled.button`
     padding: 0 15px;
     background-color: ${({theme}) => theme.colors.darkCaramel};
     
-    transition: background-color 180ms ease-in-out;
+    transition: color 225ms ease-in-out, background-color 225ms ease-in-out;
     
     font-family: 'Lato', sans-serif;
     font-size: 18px;
@@ -42,8 +42,13 @@ export const Button = styled.button`
         outline: none;
     }
 
-    &:hover {
+    &:hover:enabled {
         background-color: ${({theme}) => theme.colors.yellow};
         color: #222;
+    }
+
+    &:disabled {
+        background-color: ${({theme}) => theme.colors.darkGray};
+        cursor: not-allowed;
     }
 `
