@@ -1,13 +1,36 @@
-import styled from 'styled-components'
+import styled, { css, keyframes} from 'styled-components'
+
+interface IFooter {
+  quizesDaGalera?: boolean;
+}
+
+const show = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`
 
 // src/components/Footer/index.js
-const FooterWrapper = styled.footer`
+const FooterWrapper = styled.footer<IFooter>`
   background-color: #00000070;
   margin-top: 24px;
   padding: 20px;
   display: flex;
   align-items: center;
   border-radius: 4px; 
+
+  ${({quizesDaGalera}) =>
+      quizesDaGalera && 
+      css `
+        animation: ${show} 1050ms ease-in-out;
+        /* animation-delay: 500ms; */
+      `
+  }
+
   img {
     width: 58px;
     margin-right: 23px;

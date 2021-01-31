@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 // import { useState } from 'react'
 import { useAppContext } from '../../../context'
 import { Input, Button } from './styles'
+import Loading from  '../../Loading'
 
 
 const NameForm = () => {

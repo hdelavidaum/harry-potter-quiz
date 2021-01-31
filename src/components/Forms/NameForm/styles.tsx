@@ -26,6 +26,11 @@ export const Button = styled.button`
     margin-bottom: 10px;
     padding: 0 15px;
     background-color: ${({theme}) => theme.colors.darkCaramel};
+    display: flex;
+    place-content: center center;
+    place-items: center center;
+    justify-content: space-around;
+
     
     transition: color 225ms ease-in-out, background-color 225ms ease-in-out;
     

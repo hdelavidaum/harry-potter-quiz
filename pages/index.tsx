@@ -16,7 +16,7 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo />
-        <Widget >
+        <Widget nameForm>
           <Widget.Header>
             <h1>{db.title}</h1>
           </Widget.Header>
@@ -26,14 +26,14 @@ export default function Home() {
           </Widget.Content>
         </Widget>
 
-        <Widget>
+        <Widget quizesDaGalera>
           <Widget.Content>
             <h1>Quizes da Galera</h1>
 
             <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer quizesDaGalera />
       </QuizContainer>
       <GithubCorner projectUrl="https://github.com/hdelavidaum/harry-potter-quiz" />
     </QuizBackground>

@@ -1,10 +1,34 @@
-import styled, { StyledComponentBase } from 'styled-components';
+import styled, { StyledComponentBase, keyframes, css } from 'styled-components';
 
 interface IWidget extends StyledComponentBase<any, {}> {
   Content?: any;
   Header?: any;
+  nameForm?: boolean;
+  quizesDaGalera?: boolean;
 }
 
+
+const bottomUp = keyframes`
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: .9;
+  }
+`
+
+const show = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .9;
+  }
+`
 
 const Widget: IWidget = styled.div`
   margin-top: 16px;
@@ -15,6 +39,22 @@ const Widget: IWidget = styled.div`
   }};
   border-radius: 6px;
   overflow: hidden;
+  
+  ${({nameForm}) =>
+    nameForm && 
+    css `
+      animation: ${bottomUp} 750ms ease-in-out;
+    `
+  }
+
+  ${({quizesDaGalera}) =>
+      quizesDaGalera && 
+      css `
+        animation: ${show} 1050ms ease-in-out;
+        /* animation-delay: 500ms; */
+      `
+    }
+
   opacity: .9;
 
   h1, h2, h3 {
