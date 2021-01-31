@@ -1,8 +1,7 @@
-import {
-    Widget,
-    Button
-} from '../'
+import { Widget, Button } from '../'
+import BakcwardsArrow from './BackwardsArrow'
 import { useAppContext } from '../../context'
+import BackwardsArrow from './BackwardsArrow'
 
 
 interface IQuestion {
@@ -36,6 +35,7 @@ const Question = ({ question, questionNumber, totalOfQuestions, onSubmitCallback
     return (
         <Widget>
             <Widget.Header>
+                <BackwardsArrow />
                 {`Pergunta ${questionNumber + 1} de ${totalOfQuestions}`}
             </Widget.Header>
             <Widget.Image alt="" src={question.image}/>
