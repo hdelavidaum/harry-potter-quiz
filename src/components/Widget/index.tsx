@@ -3,8 +3,11 @@ import styled, { StyledComponentBase, keyframes, css } from 'styled-components';
 interface IWidget extends StyledComponentBase<any, {}> {
   Content?: any;
   Header?: any;
+  Image?: any;
+  Topic?: any;
   nameForm?: boolean;
   quizesDaGalera?: boolean;
+  loader?: boolean;
 }
 
 
@@ -82,7 +85,7 @@ Widget.Header = styled.header`
   }
 `;
 
-Widget.Content = styled.div`
+Widget.Content = styled.div<IWidget>`
   padding: 24px 32px 32px 32px;
 
   & > *:first-child {
@@ -94,6 +97,39 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+
+  ${({loader}) => 
+    loader &&
+    css`
+      display: flex;
+      justify-content: center;
+      place-content: center center;
+    `
+  }
+`;
+
+Widget.Image = styled.img`
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+`
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: .5;
   }
 `;
 

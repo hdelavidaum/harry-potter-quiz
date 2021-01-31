@@ -2,7 +2,6 @@ import { useRouter } from 'next/router'
 // import { useState } from 'react'
 import { useAppContext } from '../../../context'
 import { Input, Button } from './styles'
-import Loading from  '../../Loading'
 
 
 const NameForm = () => {
@@ -17,7 +16,7 @@ const NameForm = () => {
   
   return (
     <form onSubmit={handleSubmit}>
-      <Input type="text" placeholder="Insert your name here:" onChange={(e) => {setPlayerName(e.target.value); console.log(router)}} />
+      <Input type="text" placeholder="Insert your name here:" onChange={(e) => {setPlayerName(e.target.value)}} />
       <Button type="submit" disabled={playerName.length === 0} >
         {`Start quiz!`}
       </Button>

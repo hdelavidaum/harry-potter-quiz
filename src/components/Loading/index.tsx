@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { Widget } from '..'
 
 const spinner = keyframes`{
     0% {
@@ -97,20 +98,25 @@ const LoadingContainer = styled.div`
 
 const Loading = () => {
     return (
-        <LoadingContainer>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </LoadingContainer>
+        <Widget>
+            <Widget.Header>Loading...</Widget.Header>
+            <Widget.Content loader>
+                <LoadingContainer>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </LoadingContainer>
+            </Widget.Content>
+        </Widget>
     )
 }
 
