@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { useAppContext } from '../src/context'
 import db from '../db.json'
@@ -24,7 +24,7 @@ const Quiz = () => {
         setScreenState,
         currentQuestion,
         setCurrentQuestion,
-        answers
+        // answers
     }: any = useAppContext();
     const totalOfQuestions: number = db.questions.length;
     
