@@ -1,20 +1,7 @@
 import { Widget, Button, AnswerResult, AlternativesForm } from '../'
 import { useAppContext } from '../../context'
 import BackwardsArrow from './BackwardsArrow'
-
-
-interface IQuestion {
-    questionNumber: number,
-    totalOfQuestions: number,
-    onSubmitCallback: () => void,
-    question: {
-        title: string,
-        description: string,
-        image: string,
-        alternatives: string[],
-        answer: number
-    }
-}
+import { IQuestion } from '../../types'
 
 const Question = ({ question, questionNumber, totalOfQuestions, onSubmitCallback }: IQuestion) => {
     const { setAnswers, setSelectedAnswer, selectedAnswer, isFormSubmited, setFormSubmission }: any = useAppContext()

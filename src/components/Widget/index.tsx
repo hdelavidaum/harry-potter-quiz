@@ -1,16 +1,6 @@
-import styled, { StyledComponentBase, keyframes, css } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 
-interface IWidget extends StyledComponentBase<any, {}> {
-  Content?: any;
-  Header?: any;
-  Image?: any;
-  Topic?: any;
-  Input?: any;
-  nameForm?: boolean;
-  quizesDaGalera?: boolean;
-  loader?: boolean;
-}
-
+import { IWidget } from '../../types'
 
 const bottomUp = keyframes`
   0% {
@@ -34,7 +24,7 @@ const show = keyframes`
   }
 `
 
-const Widget: IWidget = styled.div`
+const Widget: IWidget  = styled.div`
   margin-top: 16px;
   margin-bottom: 16px;
   border: 1px solid ${({ theme }) => theme.colors.caramel};

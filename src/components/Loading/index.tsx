@@ -1,10 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 import { Widget } from '..'
 
-interface ILoading {
-    result?: boolean
-}
-
 const spinner = keyframes`{
     0% {
       opacity: 1;

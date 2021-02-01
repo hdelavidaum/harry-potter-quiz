@@ -3,24 +3,7 @@ import db from '../db.json'
 import HeadTags from '../src/components/HeadTags'
 import { AppProvider } from '../src/context'
 
-interface Idb {
-    theme:{
-            colors: {
-              primary?: string,
-              secondary?: string,
-              mainBg?: string,
-              contrastText?: string,
-              wrong?: string,
-              success?: string,
-              darkBlue?: string,
-              darkRed?: string, 
-              darkerRed?: string, 
-              dargKray?: string ,
-              yellow?: string,
-              caramel?: string
-          }
-    }
-}
+
 
 const GlobalStyle = createGlobalStyle`
   * {

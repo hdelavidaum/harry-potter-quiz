@@ -1,9 +1,5 @@
 import styled, { css, keyframes} from 'styled-components'
 
-interface IFooter {
-  quizesDaGalera?: boolean;
-}
-
 const show = keyframes`
   0% {
     opacity: 0;

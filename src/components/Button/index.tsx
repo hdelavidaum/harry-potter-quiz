@@ -1,9 +1,5 @@
 import styled, { css } from 'styled-components'
 
-interface IButton {
-    nameForm?: boolean
-}
-
 export const Button = styled.button<IButton>`
     width: 100%;
     height: 35px;
