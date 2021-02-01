@@ -3,7 +3,7 @@ const QuizDaGalera = () =>{
 }
 
 
-export async function getStaticProps(context: any) {
+export async function getServerSideProps(context: any) {
     console.log(context)
     return {
       props: {}, // will be passed to the page component as props
