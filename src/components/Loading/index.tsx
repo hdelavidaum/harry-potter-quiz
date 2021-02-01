@@ -1,5 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 import { Widget } from '..'
+import { ILoading } from '../../types'
+
 
 const spinner = keyframes`{
     0% {

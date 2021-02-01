@@ -2,6 +2,7 @@
 import { useEffect } from 'react'
 import { useAppContext } from '../../context'
 import { Widget, Loading } from '../'
+import {IFinalResult} from '../../types'
 
 const FinalResult = ({playerName}: IFinalResult) => {
     const {answers, isLoading, setLoading}: any = useAppContext()
