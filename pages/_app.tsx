@@ -2,6 +2,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import db from '../db.json'
 import HeadTags from '../src/components/HeadTags'
 import { AppProvider } from '../src/context'
+import {Idb} from '../src/types'
 
 
 
