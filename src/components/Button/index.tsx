@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import {IButton} from '../../types'
 
 export const Button = styled.button<IButton>`
     width: 100%;
