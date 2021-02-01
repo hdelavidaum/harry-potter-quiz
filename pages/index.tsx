@@ -33,8 +33,6 @@ export default function Home() {
             <ul>
               {db.external.map((link, key) => {
                 const [projectName, githubUser] = link.replace(/\//g, '').replace('.vercel.app','').replace('https:','').split('.');
-                console.log(projectName, githubUser);
-
                 return (<li>
                   <Widget.Topic href={link} key={key}>
                     {`${projectName}/${githubUser}`}
