@@ -17,7 +17,7 @@ const NameForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <Input type="text" placeholder="Insert your name here:" onChange={(e) => {setPlayerName(e.target.value)}} />
-      <Button type="submit" disabled={playerName.length === 0} nameForm >
+      <Button type="submit" disabled={playerName.length === 0} >
         {`Start quiz!`}
       </Button>
     </form>
