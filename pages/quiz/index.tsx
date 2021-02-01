@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import { useAppContext } from '../src/context'
-import db from '../db.json'
+import { useAppContext } from '../../src/context'
+import db from '../../db.json'
 import {
     QuizBackground,
     Footer,
@@ -11,7 +11,7 @@ import {
     Question,
     Loading,
     FinalResult
-} from '../src/components'
+} from '../../src/components'
 
 const screenStates = {
     LOADING: "LOADING",
