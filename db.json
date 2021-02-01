@@ -88,13 +88,13 @@
       "wrong": "#FF5722",
       "success": "#4CAF50",
       "darkBlue": "#2a2e39",
-      "darkRed":"#B51414",
-      "darkerRed" : "#661414",
+      "darkRed":"#B5141495",
+      "darkerRed" : "#66141495",
       "darkGray": "#626262", 
       "yellow": "#f2c66f",
       "caramel": "#bd8d4c",
       "darkCaramel": "#BD762B"
     },
-    "borderRadius": "4px"
+    "borderRadius": "5px"
   }
 }

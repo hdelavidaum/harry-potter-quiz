@@ -13,7 +13,7 @@ const QuizBackground = styled.div<{ backgroundImage?: string }>`
   display: flex;
   flex-flow: column nowrap;
   place-content: center;
-  justify-content: space-around;
+  justify-content: center;
   
   @media screen and (max-width: 500px) {
     background-image: none;

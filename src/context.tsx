@@ -8,8 +8,10 @@ export const AppProvider: React.FC = ({children}: any) =>{
     const [playerName, setPlayerName] = useState<string>("");
     const [screenState, setScreenState] = useState<string>("LOADING");
     const [currentQuestion, setCurrentQuestion] = useState<number>(0);
-    const [answers, setAnswers] = useState<{question: number, answer: number}[]>([{question: 0, answer: 0}])
-    const [selectedAnswer, setSelectedAnswer] = useState<number>(0)
+    const [answers, setAnswers] = useState<boolean[]>([])
+    const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
+    const [isFormSubmited, setFormSubmission] = useState<boolean>(false)
+    const [isLoading, setLoading] = useState<boolean>(true)
 
 
     const values ={
@@ -22,7 +24,11 @@ export const AppProvider: React.FC = ({children}: any) =>{
         answers,
         setAnswers,
         selectedAnswer,
-        setSelectedAnswer
+        setSelectedAnswer,
+        isFormSubmited,
+        setFormSubmission,
+        isLoading,
+        setLoading
     }
 
     return (

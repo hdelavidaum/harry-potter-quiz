@@ -1,6 +1,10 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const Button = styled.button`
+interface IButton {
+    nameForm?: boolean
+}
+
+export const Button = styled.button<IButton>`
     width: 100%;
     height: 35px;
     margin-bottom: 10px;
@@ -19,9 +23,16 @@ export const Button = styled.button`
     font-variant: small-caps;
     text-transform: capitalize;
     
-    border-radius:  ${({ theme }) => theme.colors.borderRadius};
+    border-radius:  ${({ theme }) => theme.borderRadius};
     border: 1px solid ${({ theme }) => theme.colors.caramel};
-    border-top: none;
+    
+    ${({nameForm}) =>
+        nameForm &&
+        css`
+            border-top: none;
+        `
+    }
+
 
     &:focus {
         outline: none;

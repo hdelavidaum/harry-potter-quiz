@@ -5,6 +5,7 @@ interface IWidget extends StyledComponentBase<any, {}> {
   Header?: any;
   Image?: any;
   Topic?: any;
+  Input?: any;
   nameForm?: boolean;
   quizesDaGalera?: boolean;
   loader?: boolean;
@@ -19,7 +20,7 @@ const bottomUp = keyframes`
 
   100% {
     transform: translateY(0);
-    opacity: .9;
+    opacity: 1;
   }
 `
 
@@ -29,7 +30,7 @@ const show = keyframes`
   }
 
   100% {
-    opacity: .9;
+    opacity: 1;
   }
 `
 
@@ -54,11 +55,9 @@ const Widget: IWidget = styled.div`
       quizesDaGalera && 
       css `
         animation: ${show} 1050ms ease-in-out;
-        /* animation-delay: 500ms; */
       `
     }
 
-  opacity: .9;
 
   h1, h2, h3 {
     font-size: 16px;

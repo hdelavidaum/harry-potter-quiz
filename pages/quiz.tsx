@@ -1,4 +1,4 @@
-// import { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { useAppContext } from '../src/context'
 import db from '../db.json'
@@ -9,7 +9,8 @@ import {
     QuizContainer,
     QuizLogo,
     Question,
-    Loading
+    Loading,
+    FinalResult
 } from '../src/components'
 
 const screenStates = {
@@ -24,12 +25,9 @@ const Quiz = () => {
         setScreenState,
         currentQuestion,
         setCurrentQuestion,
-        // answers
     }: any = useAppContext();
     const totalOfQuestions: number = db.questions.length;
-    
-    // const router = useRouter();
-    // console.log(router.query['name']);
+    const router = useRouter();
 
     const handleSubmitFn = () => {
         console.log("enviando o forms")
@@ -57,7 +55,7 @@ const Quiz = () => {
                     question={db.questions[currentQuestion]}
                     onSubmitCallback={handleSubmitFn}
                 />}
-                {screenState === "RESULT" && <div>Hora de mostrar o resultado</div>}
+                {screenState === "RESULT" && <FinalResult playerName={router.query['name'][0]} />}
                 <Footer />
             </QuizContainer>
             <GithubCorner projectUrl="https://github.com/hdelavidaum/harry-potter-quiz"/>

@@ -1,6 +1,10 @@
 import styled, { keyframes } from 'styled-components'
 import { Widget } from '..'
 
+interface ILoading {
+    result?: boolean
+}
+
 const spinner = keyframes`{
     0% {
       opacity: 1;
@@ -96,10 +100,12 @@ const LoadingContainer = styled.div`
     }
 `
 
-const Loading = () => {
+const Loading = ({ result }:ILoading) => {
     return (
         <Widget>
-            <Widget.Header>Loading...</Widget.Header>
+            <Widget.Header>{result
+                ? "Loading your results..."
+                : "Loading questions..."}</Widget.Header>
             <Widget.Content loader>
                 <LoadingContainer>
                     <div></div>
